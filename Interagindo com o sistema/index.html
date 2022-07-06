@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interagindo com o sistema</title>
 </head>
+<style>
+    h1 {
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
+    input {
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 8px;
+        border: none;
+        background-color: thistle;
+        color: white;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        cursor: pointer;
+    }
+    input:hover {
+        background-color: rgb(207, 134, 207);
+        box-shadow: 0px 10px 0px rgb(212, 69, 212);
+    }
+    span {
+        display: block;
+        margin-top: 30px;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+    }
+
+</style>
 <body>
     <h1>Interagindo com o sistema</h1>
     
@@ -17,7 +47,7 @@
            
             let agora =new Date () //Mostra a data dia e hora atual 
             let resultado = document.getElementById (`resul`)
-            resultado.innerHTML=`resultado do ${agora}` // toDateString(),simplifica a data para (dia da seman),(Mes),(dia),(ano)
+            resultado.innerHTML=`<mark>${agora}</mark>` // toDateString(),simplifica a data para (dia da seman),(Mes),(dia),(ano)
 
         }
 
