@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios aula 13</title>
+</head>
+<body>
+    <script>
+         const nome = prompt(`Digite seu nome completo:`)
+            document.body.innerHTML =`Seu nome é: <strong><mark>${nome}</mark></strong> <br />`
+            
+            document.body.innerHTML += `Seu nome tem: <strong><mark>${nome.length}</mark></strong> letras <br />` // conta as letras.
+            
+            document.body.innerHTML += `A segunda letra do seu nome é: <strong><mark>${nome[1]}</mark></strong> <br />` // Posso usar .charAt
+            
+            document.body.innerHTML += `Qual o primeiro indece da letra A no seu nome :<strong><mark>${nome.indexOf(`a`)}</mark></strong> <br />` //onde ele encontrar a primeira letra "A" no caso ele vai me retornar o indice, {ELe tem diferenca entra maiúsculas e minúsculas }.
+            
+            document.body.innerHTML += `Qual o ultimo indice da letra a no seu nome: <strong><mark>${nome.lastIndexOf(`a`)}</mark></strong> <br />` // retorna o ultimo indice com a letra marcada no caso "A" {ELe tem diferenca entra maiúsculas e minúsculas }.
+            
+            document.body.innerHTML += `As palavras 3 ultima palavra do seu nome são:<strong><mark>${nome.slice(-3)}</mark></strong> <br />` // seria o final da string "-3".
+
+            document.body.innerHTML += `As palavras do seu nome são:<strong><mark>${nome.slice(' ')}</mark></strong> <br />` // slice (` `) com espaco mostra todas as letras?.
+            
+            document.body.innerHTML += `Seu nome com letras maiúsculas: <strong><mark>${nome.toLocaleUpperCase()}</mark></strong> <br />` // toLocaleUpperCase () precisa usar "()" pois acho que é um function.
+            
+            document.body.innerHTML += `Seu nome com letras minúsculas: <strong><mark>${nome.toLowerCase()}</mark></strong> <br />` // toLowerCase() precisa usar "()" pois acho que é um function.
+
+
+
+    </script>
+    
+</body>
+</html>
