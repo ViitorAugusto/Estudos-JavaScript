@@ -3,7 +3,7 @@ const resultado= document.getElementById(`resultado`)
 const titulo = document.getElementById(`numero-titulo`)
 titulo.innerHTML =`${numero}`
 
-resultado.innerHTML += `<p>Raiz quadrada: <strong><mark>${numero ** 0.5}</mark></strong></p> ` // para calcular a raiz quadrada. 
+resultado.innerHTML += `<p>Raiz quadrada: <strong><mark>${Math.sqrt(numero)}</mark></strong></p> ` // para calcular a raiz quadrada, posso fazer numero ** 0.5 
 
 resultado.innerHTML += `<p>${numero} é inteiro :<strong><mark> ${Number.isInteger(numero)}</mark></strong></p>` // .isInteger numero inteiro.
 
