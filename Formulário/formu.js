@@ -3,7 +3,12 @@
     const resultado = document.querySelector(`resultado`)
 
     function recebeEventoForm (evento) {
-        evento.preventDefaut()
+        evento.preventDefault()
+        const nome = form.querySelector(`.nome`)
+        const sobrenome = form.querySelector(`.sobrenome`)
+        const peso = form.querySelector(`.peso`)
+        const altura =  form.querySelector(`.altura`)
+
     }
 
     form.addEventListener(`submit`, recebeEventoForm)
