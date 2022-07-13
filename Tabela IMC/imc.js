@@ -1,4 +1,5 @@
 function calcular() {
+    
     const peso = Number(document.getElementById(`peso`).value)
     const altura = Number(document.querySelector (`.altura`).value)
     const resultado = document.getElementById(`resul`)
@@ -18,6 +19,7 @@ function calcular() {
         msg= `Obesidade grau 3`
     }
 
-    resultado.innerHTML =` Seu IMC é :${imc.toFixed(2)}, ${msg}`
-
+    resultado.innerHTML =` Seu IMC é :${imc.toFixed(2)} Voce esta: ${msg}`
+    
+    
 }
