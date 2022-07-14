@@ -4,7 +4,13 @@
 
         e.preventDefault()
         console.log(`evento previnido.`)
-    } );  // Essa parte do códico para o enveio desse Formulário 
+        setResultado (`Ola Mundo`)
+    } );  // Essa parte do códico para o enveio desse Formulário.
+    
+    function setResultado (msg) {
+        const resul = document.getElementById(`resul`)
+        resul.innerHTML = msg // Essa function vai mostrar meu resultado em uma div.
+    }
 
 
 
