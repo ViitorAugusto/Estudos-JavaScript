@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="imc.css">
 </head>
 <body>
-    <h1>Tabela IMC</h1>
+    <!-- <h1>Tabela IMC</h1>
      <h2>IMC</h2>
      <ul>
         <li>Menor do que 18,5</li>
@@ -25,17 +25,19 @@
      <li>Sobrepeso</li>
      <li>Obesidade grau 1</li>
      <li>Obesidade grau 2</li>
-     <li>Obesidade grau 3</li>
+     <li>Obesidade grau 3</li> -->
 
      <h1> Calcule o seu IMC</h1>
-    <p>Peso:</p>
-    <input type="number" id="peso">
-    <p>Altura:</p>
-     <input type="number" class="altura"> <br> <br>
-     
-     <button onclick="calcular()">Calcular</button> <br> <br>
-
-     <div id="resul">Seu Resultado vai aqui.</div>
+    
+     <form action="/" class="formulario" method="post">
+        <label for="peso">Peso</label>
+        <input type="text" id="peso" name="peso">
+        <label for="altura">Altura</label>
+        <input type="text" id="altura" name="altura"> 
+        <button type="submit">Calcular</button> 
+    
+    </form>
+     <div id="resul"></div>
      <script src="imc.js"></script>
 </body>
 </html>
