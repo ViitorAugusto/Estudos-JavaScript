@@ -1,4 +1,18 @@
-function calcular() {
+    const form = document.querySelector(`.formulario`)
+
+    form.addEventListener(`submit`, function (e) { // Esse (e) e uma abreviação de .evento
+
+        e.preventDefault()
+        console.log(`evento previnido.`)
+    } );  // Essa parte do códico para o enveio desse Formulário 
+
+
+
+
+
+
+
+/*function calcular() {
     
     const peso = Number(document.getElementById(`peso`).value)
     const altura = Number(document.querySelector (`.altura`).value)
@@ -22,4 +36,4 @@ function calcular() {
     resultado.innerHTML =` Seu IMC é :${imc.toFixed(2)} Voce esta: ${msg}`
     
     
-}
+}*/
