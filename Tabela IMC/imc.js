@@ -9,8 +9,10 @@
         
         const peso = Number(inputPeso.value)// const peso = Number(document.getElementById(`peso`).value) posso usar essa tambem
         const altura = Number(inputAltura.value)
-         
-        // Vou validar os inputs 
+        
+        
+        
+        //----------- Inicio Validar os Input -----------//
         
         
         if (!peso) {
@@ -30,7 +32,10 @@
         
         
 
-    } );  // Essa parte do códico para o enveio desse Formulário.
+    } );  
+    //----------- Fim Validar os Input -----------//
+    
+    // Essa parte do códico para o enveio desse Formulário.
 
         
     
