@@ -9,7 +9,11 @@
     
     function setResultado (msg) {
         const resul = document.getElementById(`resul`)
-        resul.innerHTML = msg // Essa function vai mostrar meu resultado em uma div.
+        resul.innerHTML = `` // Essa function vai mostrar meu resultado em uma div.function setResultado Vou deixar em branco pra toda a vez que eu charmar ela ficar vazio
+        const p = document.createElement('p') // Estou criando um parágrafo
+        p.classList.add(`paragrafo-resultado`) //Criei uma class com esse comando
+        p.innerHTML = `Qual quer coisa` // colocar html dentro do parágrafi
+        resul.appendChild(p) // inclui um filho (elemento) nessa div no caso (p)
     }
 
 
