@@ -20,20 +20,31 @@
             setResultado (`Altura Inválido` , false)
             return // Se não parar aqui  
         }
+        const imc = getImc(peso, altura)
+
+        console.log(imc)
+
     } );  // Essa parte do códico para o enveio desse Formulário.
+
+    function getImc (peso, altura) {
+        const imc = peso / altura ** 2
+        return imc.toFixed(2)
+    }
+    
 
     function criarP (){
         const p = document.createElement('p') // Estou criando um parágrafo
         p.classList.add(`paragrafo-resultado`) //Criei uma class com esse comando
+        return p ;
         
         
     }
     
-    function setResultado (msg) {
+    function setResultado (msg, IsValid) {
         const resul = document.getElementById(`resul`)
         resul.innerHTML = `` // Essa function vai mostrar meu resultado em uma div.function setResultado Vou deixar em branco pra toda a vez que eu charmar ela ficar vazio
         const p = criarP () // colocando a function pra rodar no resultado
-        p.innerHTML = msg  // colocar html dentro do parágrafi
+        p.innerHTML = msg;  // colocar html dentro do parágrafi
         resul.appendChild(p) // inclui um filho (elemento) nessa div no caso (p)
 
        
