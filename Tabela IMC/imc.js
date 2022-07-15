@@ -4,10 +4,22 @@
 
         e.preventDefault()
         
-        const inputPeso = e.target.querySelector(`#peso`) //e.target vai me mostrar qual elemento foi clicado na página.
+        const inputPeso = e.target.querySelector(`#peso`) //e.target vai me mostrar qual elemento foi clicado na página.(pegando o input TODO.)
         const inputAltura = e.target.querySelector(`#altura`) // porém nao serve para pegar o valor no input só uma outra forma de pegar esse input poderia usar tambem document.querySelector.
         
-       
+        const peso = Number(inputPeso.value)// const peso = Number(document.getElementById(`peso`).value) posso usar essa tambem
+        const altura = Number(inputAltura.value)
+         
+        // Vou validar os inputs 
+
+        if (!peso) {
+            setResultado (`Peso Inválido` , false)
+            return // Se for inválido quero que meu programa pare aqui
+        }
+        if (!altura) {
+            setResultado (` Altura Inválido` , false)
+            return // Se não parar aqui  
+        }
     } );  // Essa parte do códico para o enveio desse Formulário.
 
     function criarP (){
