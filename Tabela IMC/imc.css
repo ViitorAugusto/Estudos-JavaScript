@@ -1,3 +1,7 @@
-.paragrafo-resultado {
-    background-color: rgb(94, 94, 94);
+.paragrafo-resultado, .bad {
+    background-color: rgb(109, 255, 182);
+    padding: 10px 20px;
+}
+.bad {
+    background-color: rgb(255, 150, 150);
 }
