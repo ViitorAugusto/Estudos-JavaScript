@@ -19,6 +19,7 @@
   h1 {
     text-align: center;
   }
+   
   .container {
     max-width: 640px;
     margin: 50px auto;
@@ -62,3 +63,5 @@
 .bad {
     background-color: rgb(255, 150, 150);
 }
+
+
