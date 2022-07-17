@@ -19,6 +19,13 @@
   h1 {
     text-align: center;
   }
+  h2{
+    text-align: center;
+  }
+   ul{
+    list-style-type: none;
+    columns: 2;
+   }
    
   .container {
     max-width: 640px;
