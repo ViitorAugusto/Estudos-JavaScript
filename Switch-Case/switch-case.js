@@ -12,8 +12,10 @@ const div = document.createElement(`div`); // Criada uma Div pra colocar todos o
 for (let i = 0; i < elementos.length ; i++ ) {
     let { tag, texto} = elementos[i]
     let tagCriada = document.createElement(tag) // colocar a tag se eu colocar (p) vai criar 4 parágrafos.
-    tagCriada.innerText = texto
+    
+    tagCriada.innerText = texto // innerHTML = posso usar tambem 
     div.appendChild(tagCriada) // Add as tag dentro dessa div.
 }
+
 container.appendChild(div) // Usando a Div criada aqui já com os elementos.
 
