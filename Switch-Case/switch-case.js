@@ -8,7 +8,7 @@ const elementos = [
 const container = document.querySelector(`.container`)
 const div = document.createElement(`div`); // Criada uma Div pra colocar todos os elementos do meu array
 
-for (let i = 0; < elementos.length ; i++ ) {
-
+for (let i = 0; i < elementos.length ; i++ ) {
+    console.log(elementos[i].tag)
 }
 
