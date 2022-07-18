@@ -7,11 +7,14 @@
 // Checar se o número é realmente um número = Retorna o próprio número
 // Use a funcão com números de 0 a 100.
 function fizzbuzz (numero) {
-    // !== Diferente ou ig
-    if (typeof numero !==)
-    if (numero % 3 === 0) return `Fizz`
+    
+    if (typeof numero !== 'number') return numero
+    if (numero % 3 === 0 && numero % 5 ===0) return `FizzBuzz`
+    if (numero % 3 === 0) return 'Fizz'
     if (numero % 5 === 0) return `Buzz`
-    if (numero % 3 === 0) return `Fizz`
-
+    return numero
+} 
+for (let i = 0; i <= 100; i++) {
+    console.log(i, fizzbuzz(i))
 }
 
