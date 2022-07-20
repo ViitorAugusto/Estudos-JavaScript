@@ -1,5 +1,6 @@
 const paragrafos = document.querySelector('.paragrafos')
 const ps = document.querySelectorAll(`p`)
+const teste = document.querySelector(`text`)
 // Pegar os estilos do browser
 
 const estilosBody = getComputedStyle(document.body)
@@ -9,5 +10,8 @@ console.log(backgroundColorBody)
 for (let p of ps) {
     p.style.backgroundColor = backgroundColorBody
     p.style.color = `white`
+    
 }
+
+
 
