@@ -5,5 +5,12 @@ const form = document.querySelector(`.form`)
 
         const inputNome = e.target.querySelector(`#name`)
         const inputSobreNome = e.target.querySelector(`#sobrenome`)
+        const nome = inputNome.value
+        
 
     })
+
+    function setResultado () {
+        const resul = document.querySelector(`.resul`)
+        resul.innerHTML = ``
+    }
