@@ -4,6 +4,6 @@ const form = document.querySelector(`.form`)
         e.preventDefault()
 
         const inputNome = e.target.querySelector(`#name`)
-        console.log(inputNome)
+        const inputSobreNome = e.target.querySelector(`#sobrenome`)
 
     })
