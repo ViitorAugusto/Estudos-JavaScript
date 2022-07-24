@@ -34,6 +34,16 @@ inputTarefas.addEventListener(`keypress`, function (e){
 
 /* --------------- Fim limpaInput() --------------*/
 
+/* ---------------- apagarTarefa ----------------*/
+ function criaBotaoApagar(li) {
+    li.innerText += ` `;
+    let botaoApagar = document.createElement(`button`)
+    botaoApagar.innerHTML =`Apagar`
+    li.appendChild(botaoApagar)
+ }
+
+/* ---------------- Fim apagarTarefa ----------------*/
+
 
 /* ---------------- criaTarefa ----------------*/
 
@@ -43,6 +53,7 @@ function criaTarefa (textoInput) {
     li.innerText = textoInput;
     tarefa.appendChild(li);
     limpaInput();
+    criaBotaoApagar(li)
 }
 
 /* -------------- Fim criaTarefa --------------*/
