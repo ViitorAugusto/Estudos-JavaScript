@@ -8,6 +8,9 @@ function criaLi () {
     return li;
 }
 
+ inputTarefas.addEventListener(`keypress` function (e){
+    console.log(e)
+ })
 
 /* ---------------- Fim criaLi ----------------*/
 
