@@ -81,6 +81,7 @@ btnTarefa.addEventListener(`click`, function(){
             // console.log(el.parentElement)  Vai mostrar o pai do elemento pra poder apagar ele
             el.parentElement.remove(); 
             salvarTarefas()
+            
         }
     })
 
