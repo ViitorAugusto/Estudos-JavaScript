@@ -7,6 +7,7 @@ const form = document.querySelector(`.form`)
         const inputSobreNome = e.target.querySelector(`#sobrenome`)
         const nome = inputNome.value
         
+        
 
     })
 
