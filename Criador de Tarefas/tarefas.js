@@ -94,7 +94,7 @@ btnTarefa.addEventListener(`click`, function(){
     const listaDeTarefas = [];
 
     for ( let tarefa of liTarefas) {
-        let tarefaTexto = tarefa.innerHTML;
+        let tarefaTexto = tarefas.innerHTML;
         tarefaTexto = tarefaTexto.replace(`Apagar`, ``).trim();
         listaDeTarefas.push(tarefaTexto)
         
@@ -106,7 +106,7 @@ btnTarefa.addEventListener(`click`, function(){
     
  }
 /* -------------- adicionaTarefasSalvas() --------------*/
-    function adicionaTarefasSalvas () {
+    function adicionaTarefasSalvas() {
     const tarefas = localStorage.getItem('tarefas');
     const listaDeTarefas = JSON.parse(tarefas);
   
