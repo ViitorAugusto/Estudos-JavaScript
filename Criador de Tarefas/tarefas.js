@@ -38,6 +38,9 @@ inputTarefas.addEventListener(`keypress`, function (e){
  function criaBotaoApagar(li) {
     li.innerText += ` `;
     let botaoApagar = document.createElement(`button`)
+    // botaoApagar.classList.add (`apagar`)
+    botaoApagar.setAttribute(`class`, `apagar`)
+    botaoApagar.setAttribute(`title`, `Apagar esta tarefa`)
     botaoApagar.innerHTML =`Apagar`
     li.appendChild(botaoApagar)
  }
@@ -59,10 +62,23 @@ function criaTarefa (textoInput) {
 /* -------------- Fim criaTarefa --------------*/
 
 
-
+/* -------------- click --------------*/
 
 btnTarefa.addEventListener(`click`, function(){
     if (!inputTarefas.value) return;  // (lembrando) if com uma linha so nao precisa da chaves{}
     criaTarefa(inputTarefas.value);
     
 });
+
+/* -------------- Fim click --------------*/
+
+
+/* -------------- click Apagar --------------*/
+    document.addEventListener (`click`, function(e){
+        const el = e.target
+        console.log(el)
+    })
+
+
+/* -------------- Fim Apagar --------------*/
+
