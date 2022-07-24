@@ -1,6 +1,6 @@
 const inputTarefas = document.querySelector(`.input-tarefas`);
 const btnTarefa = document.querySelector(`.btn-tarefa`);
-const tarefa = document.querySelector(`.tarefa`);
+const tarefa = document.querySelector(`.tarefas`);
 
 /* ------------------ criaLi ------------------*/
 function criaLi () {
@@ -15,7 +15,9 @@ function criaLi () {
 
 
 function criaTarefa (textoInput) {
-    const li = criaLi()
+    const li = criaLi();
+    li.innerText = textoInput;
+    tarefa.appendChild(li);
 }
 
 /* -------------- Fim criaTarefa --------------*/
