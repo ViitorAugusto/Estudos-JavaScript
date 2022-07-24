@@ -105,8 +105,16 @@ btnTarefa.addEventListener(`click`, function(){
     /* -------------- Fim JSON --------------*/
     
  }
-
- 
+/* -------------- adicionaTarefasSalvas() --------------*/
+    function adicionaTarefasSalvas () {
+    const tarefas = localStorage.getItem('tarefas');
+    const listaDeTarefas = JSON.parse(tarefas);
+  
+    for(let tarefa of listaDeTarefas) {
+      criaTarefa(tarefa);
+    }
+  }
+  adicionaTarefasSalvas();
 
 /* -------------- Fim salvarTarefas() --------------*/
 
