@@ -76,7 +76,9 @@ btnTarefa.addEventListener(`click`, function(){
 /* -------------- click Apagar --------------*/
     document.addEventListener (`click`, function(e){
         const el = e.target
-        console.log(el)
+        if (el.classList.contains(`apagar`)){
+            // console.log(el.parentElement)  Vai mostrar o pai do elemento pra poder apagar ele
+            el.parentElement.remove();        }
     })
 
 
