@@ -79,7 +79,9 @@ btnTarefa.addEventListener(`click`, function(){
         const el = e.target
         if (el.classList.contains(`apagar`)){
             // console.log(el.parentElement)  Vai mostrar o pai do elemento pra poder apagar ele
-            el.parentElement.remove();        }
+            el.parentElement.remove(); 
+            salvarTarefas()
+        }
     })
 
 
@@ -97,7 +99,18 @@ btnTarefa.addEventListener(`click`, function(){
         listaDeTarefas.push(tarefaTexto)
         
     }
-    console.log(listaDeTarefas)
+    
  }
 
 /* -------------- Fim salvarTarefas() --------------*/
+
+/* -------------- JSON --------------*/
+    const tarefasJSON = JSON.stringify(listaDeTarefas)
+    localStorage.setItem(`tarefa`, tarefasJSON)
+
+/* -------------- Fim JSON --------------*/
+
+
+function
+
+
