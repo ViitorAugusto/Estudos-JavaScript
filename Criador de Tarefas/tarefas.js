@@ -2,17 +2,25 @@ const inputTarefas = document.querySelector(`.input-tarefas`);
 const btnTarefa = document.querySelector(`.btn-tarefa`);
 const tarefa = document.querySelector(`.tarefas`);
 
+
 /* ------------------ criaLi ------------------*/
 function criaLi () {
     let li = document.createElement(`li`);
     return li;
 }
-
- inputTarefas.addEventListener(`keypress` function (e){
-    console.log(e)
- })
-
 /* ---------------- Fim criaLi ----------------*/
+ 
+
+
+/* ---------------- keypress ----------------*/
+
+inputTarefas.addEventListener(`keypress`, function (e){
+    if (e.keyCode === 13)
+    console.log(`Enter pressionado`)
+ }) // Ley Code do Enter é = 13
+/* ---------------- Fim keypress ----------------*/
+
+
 
 /* ---------------- criaTarefa ----------------*/
 
