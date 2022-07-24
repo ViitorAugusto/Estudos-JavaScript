@@ -25,6 +25,15 @@ inputTarefas.addEventListener(`keypress`, function (e){
 /* ---------------- Fim keypress ----------------*/
 
 
+/* ---------------- limpaInput() ----------------*/
+ function limpaInput () {
+    inputTarefas.value = ``;
+    inputTarefas.focus();
+ }
+
+
+/* --------------- Fim limpaInput() --------------*/
+
 
 /* ---------------- criaTarefa ----------------*/
 
@@ -33,6 +42,7 @@ function criaTarefa (textoInput) {
     const li = criaLi();
     li.innerText = textoInput;
     tarefa.appendChild(li);
+    limpaInput();
 }
 
 /* -------------- Fim criaTarefa --------------*/
