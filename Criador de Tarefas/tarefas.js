@@ -1,6 +1,6 @@
 const inputTarefas = document.querySelector(`.input-tarefas`);
 const btnTarefa = document.querySelector(`.btn-tarefa`);
-const tarefa = document.querySelector(`.tarefas`);
+const tarefas = document.querySelector(`.tarefas`);
 
 
 /* ------------------ criaLi ------------------*/
@@ -54,7 +54,7 @@ inputTarefas.addEventListener(`keypress`, function (e){
 function criaTarefa (textoInput) {
     const li = criaLi();
     li.innerText = textoInput;
-    tarefa.appendChild(li);
+    tarefas.appendChild(li);
     limpaInput();
     criaBotaoApagar(li)
     salvarTarefas()
@@ -90,27 +90,28 @@ btnTarefa.addEventListener(`click`, function(){
 /* -------------- salvarTarefas() --------------*/
 
  function salvarTarefas(){
-    const liTarefas = tarefa.querySelectorAll(`li`);
+    const liTarefas = tarefas.querySelectorAll(`li`);
     const listaDeTarefas = [];
 
     for ( let tarefa of liTarefas) {
         let tarefaTexto = tarefa.innerHTML;
-        tarefaTexto = tarefaTexto.replace(`Apagar`, ` `);
+        tarefaTexto = tarefaTexto.replace(`Apagar`, ``).trim();
         listaDeTarefas.push(tarefaTexto)
         
     }
+    /* -------------- JSON --------------*/
+    const tarefasJSON = JSON.stringify(listaDeTarefas)
+    localStorage.setItem(`tarefas`, tarefasJSON)
+    /* -------------- Fim JSON --------------*/
     
  }
 
+ 
+
 /* -------------- Fim salvarTarefas() --------------*/
 
-/* -------------- JSON --------------*/
-    const tarefasJSON = JSON.stringify(listaDeTarefas)
-    localStorage.setItem(`tarefa`, tarefasJSON)
 
-/* -------------- Fim JSON --------------*/
+   
 
-
-function
 
 
