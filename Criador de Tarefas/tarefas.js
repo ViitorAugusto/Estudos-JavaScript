@@ -37,7 +37,7 @@ inputTarefas.addEventListener(`keypress`, function (e){
 /* ---------------- apagarTarefa ----------------*/
  function criaBotaoApagar(li) {
     li.innerText += ` `;
-    let botaoApagar = document.createElement(`button`)
+    const botaoApagar = document.createElement(`button`)
     // botaoApagar.classList.add (`apagar`)
     botaoApagar.setAttribute(`class`, `apagar`)
     botaoApagar.setAttribute(`title`, `Apagar esta tarefa`)
@@ -93,7 +93,7 @@ btnTarefa.addEventListener(`click`, function(){
     const liTarefas = tarefas.querySelectorAll(`li`);
     const listaDeTarefas = [];
 
-    for ( let tarefa of liTarefas) {
+    for ( let tarefas of liTarefas) {
         let tarefaTexto = tarefas.innerHTML;
         tarefaTexto = tarefaTexto.replace(`Apagar`, ``).trim();
         listaDeTarefas.push(tarefaTexto)
